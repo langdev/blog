@@ -4,3 +4,4 @@ public
 yarn-error.log
 
 .env/.env*.local
+types/gatsby-graphql-types.d.ts

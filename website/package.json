@@ -31,9 +31,13 @@
     "gatsby": "^2.17.10",
     "gatsby-link": "^2.2.22",
     "gatsby-plugin-catch-links": "^2.1.15",
+    "gatsby-plugin-graphql-codegen": "^2.0.1",
+    "gatsby-plugin-module-resolver": "^1.0.3",
     "gatsby-plugin-react-helmet": "^3.1.13",
     "gatsby-plugin-sitemap": "^2.2.19",
     "gatsby-plugin-typescript": "^2.1.15",
+    "gatsby-source-filesystem": "^2.1.43",
+    "gatsby-transformer-remark": "^2.6.45",
     "npm-run-all": "^4.1.5",
     "onchange": "^6.1.0",
     "prettier": "^1.19.1",
@@ -41,6 +45,6 @@
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
     "sucrase": "^3.10.1",
-    "typescript": "^3.7.2"
+    "typescript": "^3.7.4"
   }
 }

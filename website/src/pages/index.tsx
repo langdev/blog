@@ -32,11 +32,12 @@ export default Page;
 
 export const pageQuery = graphql`
     query IndexPage {
-        allMarkdownRemark(sort: { fields: frontmatter___path }) {
+        allMarkdownRemark(sort: { fields: frontmatter___date }) {
             edges {
                 node {
                     frontmatter {
                         path
+                        date
                         title
                         authors
                     }

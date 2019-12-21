@@ -15,7 +15,7 @@ export const createPages: GatsbyNode['createPages'] = async ({ actions, graphql 
 const gql = String.raw;
 const gatsbyNodeEveryPostsQuery = gql`
     query GatsbyNodeEveryPosts {
-        allMarkdownRemark(sort: { fields: frontmatter___path }) {
+        allMarkdownRemark(sort: { fields: frontmatter___date }) {
             edges {
                 node {
                     frontmatter {

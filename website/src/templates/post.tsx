@@ -8,11 +8,12 @@ interface PostProps {
 }
 const Post: React.FC<PostProps> = ({ data }) => {
     const { markdownRemark } = data;
-    const { title, authors } = markdownRemark?.frontmatter!;
+    const { date, title, authors } = markdownRemark?.frontmatter!;
     const __html = markdownRemark?.html!;
     return (
         <>
             <h1>{title}</h1>
+            <time dateTime={date}>{date}</time>
             <div>by {authors}</div>
             <div dangerouslySetInnerHTML={{ __html }} />
             <Link to="/">목록으로 돌아가기</Link>
@@ -27,6 +28,7 @@ export const pageQuery = graphql`
         markdownRemark(frontmatter: { path: { eq: $path } }) {
             html
             frontmatter {
+                date
                 title
                 authors
             }

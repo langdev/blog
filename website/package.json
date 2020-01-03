@@ -13,7 +13,9 @@
     "build": "npm run gatsby -- build --prefix-paths",
     "dev": "run-p dev:**",
     "dev:gatsby": "npm run gatsby -- develop -H 0.0.0.0",
-    "dev:prettier": "onchange '@(*.ts|@(src|types)/**/*.@(ts|tsx))' -- prettier --write {{changed}}"
+    "dev:prettier": "onchange '@(*.ts|@(src|types)/**/*.@(ts|tsx))' -- prettier --write {{changed}}",
+    "deploy": "run-s build deploy:gh-pages",
+    "deploy:gh-pages": "gh-pages -d public"
   },
   "repository": {
     "type": "git",
@@ -38,6 +40,7 @@
     "gatsby-plugin-typescript": "^2.1.15",
     "gatsby-source-filesystem": "^2.1.43",
     "gatsby-transformer-remark": "^2.6.45",
+    "gh-pages": "^2.1.1",
     "npm-run-all": "^4.1.5",
     "onchange": "^6.1.0",
     "prettier": "^1.19.1",

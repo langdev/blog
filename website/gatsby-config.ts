@@ -1,7 +1,6 @@
 export = {
-    pathPrefix: '/blog',
     siteMetadata: {
-        siteUrl: 'https://langdev.github.io',
+        siteUrl: 'https://blog.langdev.org',
     },
     plugins: [
         'gatsby-plugin-typescript',

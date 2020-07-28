@@ -1,11 +1,10 @@
-import path from 'path';
-import { GatsbyNode } from 'gatsby';
+const path = require('path');
 
-export const createPages: GatsbyNode['createPages'] = async ({ actions, graphql }) => {
+exports.createPages = async ({ actions, graphql }) => {
     const { createPage } = actions;
     const component = path.resolve('src/templates/post.tsx');
     const { data } = await graphql(gatsbyNodeEveryPostsQuery);
-    const posts = (data as GatsbyNodeEveryPostsData).allMarkdownRemark.edges;
+    const posts = data.allMarkdownRemark.edges;
     for (const post of posts) {
         const path = post.node.frontmatter.path;
         createPage({ path, component, context: {} });
@@ -26,14 +25,3 @@ const gatsbyNodeEveryPostsQuery = gql`
         }
     }
 `;
-interface GatsbyNodeEveryPostsData {
-    allMarkdownRemark: {
-        edges: {
-            node: {
-                frontmatter: {
-                    path: string;
-                };
-            };
-        }[];
-    };
-}

@@ -1,7 +1,18 @@
-node_modules
-public
-.cache
-yarn-error.log
+# Gatsby
+/public/
+/.cache/
 
+# Yarn
+/node_modules/
+yarn-error.log
+/.yarn/*
+/!.yarn/releases
+/!.yarn/plugins
+/!.yarn/sdks
+/!.yarn/versions
+
+# dotenv
 .env/.env*.local
-types/gatsby-graphql-types.d.ts
+
+# gatsby-plugin-graphql-codegen
+/types/gatsby-graphql-types.d.ts

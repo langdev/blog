@@ -10,9 +10,9 @@
     "lint": "prettier --check .",
     "lint:fix": "prettier --write .",
     "build": "gatsby build --prefix-paths",
-    "dev": "run-p dev:**",
+    "dev": "run-p 'dev:**'",
     "dev:gatsby": "gatsby develop -H 0.0.0.0",
-    "dev:prettier": "onchange '**/*.{js,ts,tsx,scss}' --exclude-path '.gitignore' -- prettier --write {{changed}}",
+    "dev:prettier": "onchange '**/*.{js,ts,tsx,scss}' --exclude-path '.gitignore' -- prettier --write '{{changed}}'",
     "deploy": "run-s build deploy:gh-pages",
     "deploy:gh-pages": "gh-pages -d public"
   },

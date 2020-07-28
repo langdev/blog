@@ -1,0 +1,8 @@
+/README.md
+/package.json
+/tsconfig.json
+
+# Generated files
+/.cache/
+/public/
+/types/gatsby-graphql-types.d.ts

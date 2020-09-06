@@ -6,10 +6,10 @@
 /node_modules/
 yarn-error.log
 /.yarn/*
-/!.yarn/releases
-/!.yarn/plugins
-/!.yarn/sdks
-/!.yarn/versions
+!/.yarn/releases
+!/.yarn/plugins
+!/.yarn/sdks
+!/.yarn/versions
 
 # dotenv
 .env/.env*.local

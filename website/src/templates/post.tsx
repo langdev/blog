@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import { css } from 'emotion'
+import 'github-markdown-css'
 
 import { main } from '~/src/common/styles'
 import { PostPageQuery } from '~/types/gatsby-graphql-types'
@@ -28,7 +29,7 @@ export default function Post(props: PostProps) {
       <h1>{title}</h1>
       <time dateTime={date}>{date}</time>
       <div>by {authors}</div>
-      <div dangerouslySetInnerHTML={{ __html }} />
+      <article className="markdown-body" dangerouslySetInnerHTML={{ __html }} />
       <div className={backToList}>
         <Link to="/">목록으로 돌아가기</Link>
       </div>

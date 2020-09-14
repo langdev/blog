@@ -22,8 +22,8 @@ export default function Post(props: PostProps) {
     <main className={main}>
       <Helmet>
         <title>{title}</title>
-        <link rel="icon" href="/static/logo.svg" type="image/svg+xml"/>
-        <link rel="icon" href="/static/logo-512.png" type="image/png"/>
+        <link rel="icon" href="/static/logo.svg" type="image/svg+xml" />
+        <link rel="icon" href="/static/logo-512.png" type="image/png" />
       </Helmet>
       <h1>{title}</h1>
       <time dateTime={date}>{date}</time>

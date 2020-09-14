@@ -20,8 +20,8 @@ export default function Page(props: PageProps) {
       <Helmet>
         <title>LangDev Team Blog</title>
         <link rel="canonical" href="https://blog.langdev.org/" />
-        <link rel="icon" href="/static/logo.svg" type="image/svg+xml"/>
-        <link rel="icon" href="/static/logo-512.png" type="image/png"/>
+        <link rel="icon" href="/static/logo.svg" type="image/svg+xml" />
+        <link rel="icon" href="/static/logo-512.png" type="image/png" />
       </Helmet>
       <h1>LangDev Blog</h1>
       <ul>

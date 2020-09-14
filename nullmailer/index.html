@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 2.24.58"/><title data-react-helmet="true"></title><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/webpack-runtime-857582e177a868038b01.js"/><link as="script" rel="preload" href="/framework-ff45e3a8ab04ddd6106a.js"/><link as="script" rel="preload" href="/app-d1c6c20691b7796896cd.js"/><link as="script" rel="preload" href="/component---src-templates-post-tsx-3923320359a6b2639c1c.js"/><link as="fetch" rel="preload" href="/page-data/nullmailer/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><h1>nullmailer 설정하기</h1><time dateTime="2019-11-22">2019-11-22</time><div>by <!-- -->sanxiyn</div><div><p><a href="http://mutt.org/">mutt</a>와 같은 메일 클라이언트를 로컬 터미널에서 사용하고 싶지만 메일 서버를 운영하고 싶지는 않은 경우가 있을 것입니다. 이 글에서는 <code>nullmailer</code>를 써서 메일 서버 없이 로컬 메일 환경을 구성하는 방법을 설명합니다.</p>
+<p><a href="https://wiki.debian.org/nullmailer">데비안 위키</a>에 있는 영어로 된 문서도 참고할 수 있습니다.</p>
+<p><code>nullmailer</code>는 <code>sendmail(1)</code> 바이너리를 제공할 뿐 SMTP 포트인 포트 25를 포함해서 어떤 포트도 바인딩하지 않습니다. 실제로 메일을 보내려면 원격 메일 서버를 설정해야 합니다. 여기서는 구글 Gmail을 예제로 설명하겠습니다.</p>
+<p>우선 패키지를 설치합니다. 데비안 GNU/리눅스를 예로 들겠습니다.</p>
+<pre><code>$ sudo apt install nullmailer
+</code></pre>
+<p>구글 계정에 2단계 인증을 사용하고 있다면(사용을 권장합니다) 메일을 보낼 때마다 확인할 수는 없으므로 <a href="https://myaccount.google.com/apppasswords">앱 비밀번호</a>를 만들어야 합니다.</p>
+<p>원격 메일 서버는 <code>/etc/nullmailer/remotes</code>에 설정합니다. 비밀번호가 포함되어 있으므로 관리자 권한이 필요합니다.</p>
+<pre><code>$ sudo vi /etc/nullmailer/remotes
+</code></pre>
+<p>다음과 같이 하면 됩니다.</p>
+<pre><code>smtp.gmail.com smtp tls user=username pass=password
+</code></pre>
+<p><code>smtp.gmail.com</code>은 메일 서버 주소, <code>smtp</code>는 프로토콜입니다. (<code>nullmailer</code>는 다른 프로토콜도 지원합니다. <code>nullmailer-send(8)</code>를 참고하세요.) <code>tls</code>는 암호화를 사용한다는 뜻이며 Gmail의 경우 필수입니다. 비밀번호에 빈칸이 있는 경우 <code>pass='password with space'</code>와 같이 홑따옴표로 싸면 됩니다.</p>
+<p><code>nullmailer</code>를 재시작합니다.</p>
+<pre><code>$ sudo systemctl restart nullmailer
+</code></pre>
+<p>테스트 메일을 보내보고 로그를 확인합니다. <code>smtp: Succeeded</code> 등이 보이면 잘 된 것입니다.</p>
+<pre><code>$ sudo systemctl status nullmailer
+</code></pre></div><a href="/">목록으로 돌아가기</a></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/nullmailer";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-895a25392fea6da3c411.js"],"app":["/app-d1c6c20691b7796896cd.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-0a3c80ab4f176c93c8c0.js"],"component---src-templates-post-tsx":["/component---src-templates-post-tsx-3923320359a6b2639c1c.js"]};/*]]>*/</script><script src="/polyfill-895a25392fea6da3c411.js" nomodule=""></script><script src="/component---src-templates-post-tsx-3923320359a6b2639c1c.js" async=""></script><script src="/app-d1c6c20691b7796896cd.js" async=""></script><script src="/framework-ff45e3a8ab04ddd6106a.js" async=""></script><script src="/webpack-runtime-857582e177a868038b01.js" async=""></script></body></html>

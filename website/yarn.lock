@@ -4004,6 +4004,7 @@ __metadata:
     "@types/node": ^14.10.1
     "@types/react": ^16.9.49
     "@types/react-dom": ^16.9.8
+    emotion: ^10.0.27
     gatsby: ^2.24.58
     gatsby-plugin-catch-links: ^2.3.11
     gatsby-plugin-graphql-codegen: ^2.7.1
@@ -5373,6 +5374,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"create-emotion@npm:^10.0.27":
+  version: 10.0.27
+  resolution: "create-emotion@npm:10.0.27"
+  dependencies:
+    "@emotion/cache": ^10.0.27
+    "@emotion/serialize": ^0.11.15
+    "@emotion/sheet": 0.9.4
+    "@emotion/utils": 0.11.3
+  checksum: 59581a54fe4f6da6bcbae502df852f0cf0dc6f002aaf416701266a4d944e63d9e33ac0d733b35d8a6265f4052dfdba67222ae341e8f9382afb2e40ed03831053
+  languageName: node
+  linkType: hard
+
 "create-hash@npm:^1.1.0, create-hash@npm:^1.1.2, create-hash@npm:^1.2.0":
   version: 1.2.0
   resolution: "create-hash@npm:1.2.0"
@@ -6425,6 +6438,16 @@ __metadata:
   version: 3.0.0
   resolution: "emojis-list@npm:3.0.0"
   checksum: a79126b55bc86ee8fd938235a6adf9d457c05fb5bb934e8608b7d35c878d9d1e312a67759244f5c3fba0810b508eb5617e5e6ad6886496ebcfa6832d1c8de3c4
+  languageName: node
+  linkType: hard
+
+"emotion@npm:^10.0.27":
+  version: 10.0.27
+  resolution: "emotion@npm:10.0.27"
+  dependencies:
+    babel-plugin-emotion: ^10.0.27
+    create-emotion: ^10.0.27
+  checksum: cc542b2df96732b0c60683a60c94e42d226ac37854c73d33c6e32f596dce52261a4c07a841edf621f44166a4b5a146e4cb18d294ae6759a5522f80e2dba5cd44
   languageName: node
   linkType: hard
 

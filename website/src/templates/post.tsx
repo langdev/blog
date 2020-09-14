@@ -3,11 +3,11 @@ import { graphql, Link } from 'gatsby';
 
 import { PostPageQuery } from '~/types/gatsby-graphql-types';
 
-interface PostProps {
+type PostProps = {
   data: PostPageQuery;
 }
-const Post: React.FC<PostProps> = ({ data }) => {
-  const { markdownRemark } = data;
+export default function Post(props: PostProps) {
+  const { markdownRemark } = props.data;
   const { date, title, authors } = markdownRemark?.frontmatter!;
   const __html = markdownRemark?.html!;
   return (
@@ -20,8 +20,6 @@ const Post: React.FC<PostProps> = ({ data }) => {
     </>
   );
 };
-
-export default Post;
 
 export const pageQuery = graphql`
   query PostPage($path: String!) {

@@ -6,12 +6,11 @@
     "test": "tsc && prettier --check .",
     "fmt": "prettier --write ."
   },
-  "dependencies": {
+  "devDependencies": {
     "@types/node": "^14.10.1",
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
     "@types/react-helmet": "^6.1.0",
-    "emotion": "^10.0.27",
     "gatsby": "^2.24.58",
     "gatsby-plugin-catch-links": "^2.3.11",
     "gatsby-plugin-graphql-codegen": "^2.7.1",
@@ -22,10 +21,13 @@
     "gatsby-source-filesystem": "^2.3.29",
     "gatsby-transformer-remark": "^2.8.34",
     "prettier": "^2.1.1",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "emotion": "^10.0.27",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0",
-    "typescript": "^4.0.2"
+    "react-helmet": "^6.1.0"
   },
   "prettier": {
     "singleQuote": true,

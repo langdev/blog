@@ -1,7 +1,13 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
+import { css, cx } from 'emotion'
 
+import { main } from '~/src/common/styles'
 import { IndexPageQuery } from '~/types/gatsby-graphql-types'
+
+const custom = css`
+  padding-top: 150px;
+`
 
 type PageProps = {
   location: Location
@@ -9,7 +15,7 @@ type PageProps = {
 }
 export default function Page(props: PageProps) {
   return (
-    <>
+    <main className={cx(main, custom)}>
       <h1>LangDev Blog</h1>
       <ul>
         {props.data.allMarkdownRemark.edges.map((edge, index) => {
@@ -25,7 +31,7 @@ export default function Page(props: PageProps) {
           )
         })}
       </ul>
-    </>
+    </main>
   )
 }
 

@@ -1,16 +1,10 @@
 {
   "name": "blog",
   "scripts": {
-    "start": "gatsby serve",
-    "clean": "rm -rf ./public",
-    "lint": "prettier --check .",
-    "lint:fix": "prettier --write .",
-    "build": "gatsby build --prefix-paths",
-    "dev": "run-p 'dev:**'",
-    "dev:gatsby": "gatsby develop -H 0.0.0.0",
-    "dev:prettier": "onchange '**/*.{js,ts,tsx,scss}' --exclude-path '.gitignore' -- prettier --write '{{changed}}'",
-    "deploy": "run-s build deploy:gh-pages",
-    "deploy:gh-pages": "gh-pages -d public"
+    "dev": "gatsby develop",
+    "build": "gatsby build",
+    "test": "tsc && prettier --check .",
+    "fmt": "prettier --write ."
   },
   "dependencies": {
     "@types/node": "^14.10.1",
@@ -26,9 +20,6 @@
     "gatsby-plugin-typescript": "^2.4.19",
     "gatsby-source-filesystem": "^2.3.29",
     "gatsby-transformer-remark": "^2.8.34",
-    "gh-pages": "^3.1.0",
-    "npm-run-all": "^4.1.5",
-    "onchange": "^7.0.2",
     "prettier": "^2.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

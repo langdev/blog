@@ -1,16 +1,31 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "lib": ["dom", "esnext"],
-    "jsx": "react",
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "noEmit": true,
+    "jsx": "preserve",
+
+    // Strict Typecheck
     "strict": true,
-    "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    // Module
+    "esModuleInterop": true,
     "moduleResolution": "node",
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // Path alias
     "baseUrl": "./",
     "paths": {
       "~/*": ["*"]
-    }
+    },
+
+    // Advanced
+    "skipLibCheck": true
   }
 }

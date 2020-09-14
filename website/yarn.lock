@@ -560,7 +560,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-syntax-jsx@npm:7.10.4, @babel/plugin-syntax-jsx@npm:^7.0.0, @babel/plugin-syntax-jsx@npm:^7.10.4":
+"@babel/plugin-syntax-jsx@npm:7.10.4, @babel/plugin-syntax-jsx@npm:^7.0.0, @babel/plugin-syntax-jsx@npm:^7.10.4, @babel/plugin-syntax-jsx@npm:^7.2.0":
   version: 7.10.4
   resolution: "@babel/plugin-syntax-jsx@npm:7.10.4"
   dependencies:
@@ -984,7 +984,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-react-jsx@npm:^7.0.0, @babel/plugin-transform-react-jsx@npm:^7.10.4, @babel/plugin-transform-react-jsx@npm:^7.9.4":
+"@babel/plugin-transform-react-jsx@npm:^7.0.0, @babel/plugin-transform-react-jsx@npm:^7.10.4, @babel/plugin-transform-react-jsx@npm:^7.3.0, @babel/plugin-transform-react-jsx@npm:^7.9.4":
   version: 7.10.4
   resolution: "@babel/plugin-transform-react-jsx@npm:7.10.4"
   dependencies:
@@ -1350,6 +1350,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/babel-plugin-jsx-pragmatic@npm:^0.1.5":
+  version: 0.1.5
+  resolution: "@emotion/babel-plugin-jsx-pragmatic@npm:0.1.5"
+  dependencies:
+    "@babel/plugin-syntax-jsx": ^7.2.0
+  peerDependencies:
+    "@babel/core": ^7.0.0
+  checksum: 3957a41cac694c3c57d663f224b3484462002ab9665a5560f263e52b5f77b5b00cddf6588f24bff9efd26084ae6b2bf0a89fcb4ae093c4a1e19c22f46ce24a15
+  languageName: node
+  linkType: hard
+
+"@emotion/babel-preset-css-prop@npm:^10.0.27":
+  version: 10.0.27
+  resolution: "@emotion/babel-preset-css-prop@npm:10.0.27"
+  dependencies:
+    "@babel/plugin-transform-react-jsx": ^7.3.0
+    "@babel/runtime": ^7.5.5
+    "@emotion/babel-plugin-jsx-pragmatic": ^0.1.5
+    babel-plugin-emotion: ^10.0.27
+  peerDependencies:
+    "@babel/core": ^7.0.0
+  checksum: 2e29dd5581031fa06134f7e03b3de2c6fbdce672db339bffecadc37e3be95df1f1551d1f0dd48fdec3fcfe2e17a224b3d6ee5e4d100dfbc2a2a9545e96fcc024
+  languageName: node
+  linkType: hard
+
 "@emotion/cache@npm:^10.0.27":
   version: 10.0.29
   resolution: "@emotion/cache@npm:10.0.29"
@@ -1362,7 +1387,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/core@npm:^10.0.14":
+"@emotion/core@npm:^10.0.14, @emotion/core@npm:^10.0.35":
   version: 10.0.35
   resolution: "@emotion/core@npm:10.0.35"
   dependencies:
@@ -1432,7 +1457,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/styled-base@npm:^10.0.27":
+"@emotion/styled-base@npm:^10.0.27, @emotion/styled-base@npm:^10.0.31":
   version: 10.0.31
   resolution: "@emotion/styled-base@npm:10.0.31"
   dependencies:
@@ -1447,7 +1472,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/styled@npm:^10.0.14":
+"@emotion/styled@npm:^10.0.14, @emotion/styled@npm:^10.0.27":
   version: 10.0.27
   resolution: "@emotion/styled@npm:10.0.27"
   dependencies:
@@ -4010,13 +4035,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "blog@workspace:."
   dependencies:
+    "@emotion/core": ^10.0.35
+    "@emotion/styled": ^10.0.27
+    "@emotion/styled-base": ^10.0.31
     "@types/node": ^14.10.1
     "@types/react": ^16.9.49
     "@types/react-dom": ^16.9.8
     "@types/react-helmet": ^6.1.0
-    emotion: ^10.0.27
     gatsby: ^2.24.58
     gatsby-plugin-catch-links: ^2.3.11
+    gatsby-plugin-emotion: ^4.3.10
     gatsby-plugin-graphql-codegen: ^2.7.1
     gatsby-plugin-module-resolver: ^1.0.3
     gatsby-plugin-react-helmet: ^3.3.10
@@ -5385,18 +5413,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"create-emotion@npm:^10.0.27":
-  version: 10.0.27
-  resolution: "create-emotion@npm:10.0.27"
-  dependencies:
-    "@emotion/cache": ^10.0.27
-    "@emotion/serialize": ^0.11.15
-    "@emotion/sheet": 0.9.4
-    "@emotion/utils": 0.11.3
-  checksum: 59581a54fe4f6da6bcbae502df852f0cf0dc6f002aaf416701266a4d944e63d9e33ac0d733b35d8a6265f4052dfdba67222ae341e8f9382afb2e40ed03831053
-  languageName: node
-  linkType: hard
-
 "create-hash@npm:^1.1.0, create-hash@npm:^1.1.2, create-hash@npm:^1.2.0":
   version: 1.2.0
   resolution: "create-hash@npm:1.2.0"
@@ -6449,16 +6465,6 @@ __metadata:
   version: 3.0.0
   resolution: "emojis-list@npm:3.0.0"
   checksum: a79126b55bc86ee8fd938235a6adf9d457c05fb5bb934e8608b7d35c878d9d1e312a67759244f5c3fba0810b508eb5617e5e6ad6886496ebcfa6832d1c8de3c4
-  languageName: node
-  linkType: hard
-
-"emotion@npm:^10.0.27":
-  version: 10.0.27
-  resolution: "emotion@npm:10.0.27"
-  dependencies:
-    babel-plugin-emotion: ^10.0.27
-    create-emotion: ^10.0.27
-  checksum: cc542b2df96732b0c60683a60c94e42d226ac37854c73d33c6e32f596dce52261a4c07a841edf621f44166a4b5a146e4cb18d294ae6759a5522f80e2dba5cd44
   languageName: node
   linkType: hard
 
@@ -7991,6 +7997,20 @@ fsevents@~2.1.2:
   peerDependencies:
     gatsby: ^2.0.0
   checksum: 368bdd41761844d30533cb653b947a421d5d1e088d5804ad310b1a0216b4b2f23a213a17b5a63a832e17e72c61137e35bc5029dba8915b8f20357cceadb1096e
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-emotion@npm:^4.3.10":
+  version: 4.3.10
+  resolution: "gatsby-plugin-emotion@npm:4.3.10"
+  dependencies:
+    "@babel/runtime": ^7.10.3
+    "@emotion/babel-preset-css-prop": ^10.0.27
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    "@emotion/core": ^10.0.5
+    gatsby: ^2.0.0
+  checksum: 1843acf0dc7f80482060f7bf8e9d184121eccc6f1cc4966b056d8892de6c7679a16a9b4828f9e3638c992ad698b6900aeb1ec8aec5a98b604ffc6cd317894073
   languageName: node
   linkType: hard
 

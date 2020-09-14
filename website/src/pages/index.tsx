@@ -1,12 +1,12 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
-import { css, cx } from 'emotion'
+import styled from '@emotion/styled'
 
-import { main } from '~/src/common/styles'
+import { Main as OriginalMain } from '~/src/common/styles'
 import { IndexPageQuery } from '~/types/gatsby-graphql-types'
 
-const custom = css`
+const Main = styled(OriginalMain)`
   padding-top: 150px;
 `
 
@@ -16,7 +16,7 @@ type PageProps = {
 }
 export default function Page(props: PageProps) {
   return (
-    <main className={cx(main, custom)}>
+    <Main>
       <Helmet>
         <title>LangDev Team Blog</title>
         <link rel="canonical" href="https://blog.langdev.org/" />
@@ -38,7 +38,7 @@ export default function Page(props: PageProps) {
           )
         })}
       </ul>
-    </main>
+    </Main>
   )
 }
 

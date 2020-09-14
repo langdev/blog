@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  /* Word breaks shouldn't be applied to CJK texts */
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}

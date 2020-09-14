@@ -7,6 +7,11 @@ import 'github-markdown-css'
 import { main } from '~/src/common/styles'
 import { PostPageQuery } from '~/types/gatsby-graphql-types'
 
+const info = css`
+  margin-bottom: 2em;
+  text-align: right;
+`
+
 const backToList = css`
   margin-top: 2em;
   text-align: right;
@@ -27,8 +32,9 @@ export default function Post(props: PostProps) {
         <link rel="icon" href="/static/logo-512.png" type="image/png" />
       </Helmet>
       <h1>{title}</h1>
-      <time dateTime={date}>{date}</time>
-      <div>by {authors}</div>
+      <p className={info}>
+        <time dateTime={date}>{date}</time>, by <b>{authors}</b>
+      </p>
       <article className="markdown-body" dangerouslySetInnerHTML={{ __html }} />
       <div className={backToList}>
         <Link to="/">목록으로 돌아가기</Link>

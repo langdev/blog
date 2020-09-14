@@ -2521,6 +2521,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-helmet@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "@types/react-helmet@npm:6.1.0"
+  dependencies:
+    "@types/react": "*"
+  checksum: b7aaa3aa2d81cd3b14a0e77a858de86934a3400f4ec35945117edb3979b8a41130e70b8a27241de295195e365962a9b5bc149a2a029d23795fd0f6c740d1de77
+  languageName: node
+  linkType: hard
+
 "@types/react@npm:*":
   version: 16.9.43
   resolution: "@types/react@npm:16.9.43"
@@ -4004,6 +4013,7 @@ __metadata:
     "@types/node": ^14.10.1
     "@types/react": ^16.9.49
     "@types/react-dom": ^16.9.8
+    "@types/react-helmet": ^6.1.0
     emotion: ^10.0.27
     gatsby: ^2.24.58
     gatsby-plugin-catch-links: ^2.3.11

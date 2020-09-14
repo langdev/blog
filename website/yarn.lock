@@ -4005,7 +4005,6 @@ __metadata:
     "@types/react": ^16.9.49
     "@types/react-dom": ^16.9.8
     gatsby: ^2.24.58
-    gatsby-link: ^2.4.13
     gatsby-plugin-catch-links: ^2.3.11
     gatsby-plugin-graphql-codegen: ^2.7.1
     gatsby-plugin-module-resolver: ^1.0.3

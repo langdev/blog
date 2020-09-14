@@ -1,8 +1,13 @@
-/README.md
-/package.json
-/tsconfig.json
+*.md
+*.json
 
-# Generated files
+# Yarn 2
+/.yarn/
+/.yarnrc.yml
+/.pnp.*
+/.vim/
+
+# Build results
 /.cache/
 /public/
 /types/gatsby-graphql-types.d.ts

@@ -1,0 +1,5 @@
+/website/.yarn/releases/** binary linguist-generated
+/website/.yarn/plugins/**  binary linguist-generated
+/website/.yarn/cache/**    linguist-vendored
+/website/.yarn/sdks/**     binary linguist-generated
+/website/.yarn/pnpify/**   binary linguist-generated

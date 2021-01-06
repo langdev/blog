@@ -31,7 +31,8 @@
     "github-markdown-css": "^4.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "regenerator-runtime": "^0.13.7"
   },
   "prettier": {
     "singleQuote": true,

@@ -3,5 +3,6 @@
 <url> <loc>https://blog.langdev.org/nullmailer</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.langdev.org/emoji-hyperrealism</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.langdev.org/how-to-contribute-to-rustpython-with-unittest</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.langdev.org/parameter-syntax-proposal</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.langdev.org/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>

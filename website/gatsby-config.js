@@ -7,7 +7,6 @@ module.exports = {
     'gatsby-plugin-emotion',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
-    'gatsby-plugin-catch-links',
     {
       resolve: 'gatsby-plugin-module-resolver',
       options: {
@@ -31,5 +30,6 @@ module.exports = {
       },
     },
     'gatsby-transformer-remark',
+    'gatsby-plugin-catch-links',
   ],
 }

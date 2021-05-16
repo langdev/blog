@@ -9,14 +9,8 @@ defaults:
 jobs:
   test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node: ['14', '12', '10']
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node }}
       - id: yarn-cache
         run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
       - uses: actions/cache@v2

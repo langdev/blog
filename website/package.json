@@ -7,7 +7,7 @@
     "fmt": "prettier --write ."
   },
   "devDependencies": {
-    "@types/node": "^14.14.20",
+    "@types/node": "^15",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-helmet": "^6.1.0",

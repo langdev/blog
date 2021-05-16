@@ -1,13 +1,15 @@
-*.md
-*.json
+# Gatsby
+/public/
+/.cache/
 
-# Yarn 2
+# Yarn
 /.yarn/
 /.yarnrc.yml
 /.pnp.*
 /.vim/
 
-# Build results
-/.cache/
-/public/
-/types/gatsby-graphql-types.d.ts
+# gatsby-plugin-typegen
+/src/__generated__/
+
+*.md
+*.json

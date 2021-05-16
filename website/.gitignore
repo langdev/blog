@@ -10,8 +10,8 @@
 !/.yarn/versions
 /.pnp.*
 
+# gatsby-plugin-typegen
+/src/__generated__/
+
 # dotenv
 .env/.env*.local
-
-# gatsby-plugin-graphql-codegen
-/types/gatsby-graphql-types.d.ts

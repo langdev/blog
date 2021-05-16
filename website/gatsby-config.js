@@ -3,6 +3,12 @@ module.exports = {
     siteUrl: 'https://blog.langdev.org',
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-typegen',
+      options: {
+        outputPath: 'src/__generated__/gatsby-types.d.ts',
+      },
+    },
     'gatsby-plugin-typescript',
     'gatsby-plugin-emotion',
     'gatsby-plugin-react-helmet',
@@ -14,12 +20,6 @@ module.exports = {
         aliases: {
           '~': '.',
         },
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-graphql-codegen',
-      options: {
-        fileName: 'types/gatsby-graphql-types.d.ts',
       },
     },
     {

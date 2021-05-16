@@ -5,7 +5,6 @@ import styled from '@emotion/styled'
 import 'github-markdown-css'
 
 import { Main } from '~/src/common/styles'
-import { PostPageQuery } from '~/types/gatsby-graphql-types'
 
 const Info = styled.p`
   margin-bottom: 2em;
@@ -18,7 +17,7 @@ const Footer = styled.footer`
 `
 
 type PostProps = {
-  data: PostPageQuery
+  data: GatsbyTypes.PostPageQuery
 }
 export default function Post(props: PostProps) {
   const { markdownRemark } = props.data

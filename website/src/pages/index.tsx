@@ -4,7 +4,6 @@ import { graphql, Link } from 'gatsby'
 import styled from '@emotion/styled'
 
 import { Main as OriginalMain } from '~/src/common/styles'
-import { IndexPageQuery } from '~/types/gatsby-graphql-types'
 
 const Main = styled(OriginalMain)`
   padding-top: 150px;
@@ -12,7 +11,7 @@ const Main = styled(OriginalMain)`
 
 type PageProps = {
   location: Location
-  data: IndexPageQuery
+  data: GatsbyTypes.IndexPageQuery
 }
 export default function Page(props: PageProps) {
   return (

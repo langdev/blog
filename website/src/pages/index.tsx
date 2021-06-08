@@ -1,13 +1,8 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
-import styled from '@emotion/styled'
 
-import { Main as OriginalMain } from '~/src/common/styles'
-
-const Main = styled(OriginalMain)`
-  padding-top: 150px;
-`
+import * as style from './index.module.css'
 
 type PageProps = {
   location: Location
@@ -15,7 +10,7 @@ type PageProps = {
 }
 export default function Page(props: PageProps) {
   return (
-    <Main>
+    <main className={style.main}>
       <Helmet>
         <title>LangDev Team Blog</title>
         <link rel="canonical" href="https://blog.langdev.org/" />
@@ -37,7 +32,7 @@ export default function Page(props: PageProps) {
           )
         })}
       </ul>
-    </Main>
+    </main>
   )
 }
 

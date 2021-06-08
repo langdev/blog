@@ -1,20 +1,9 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
-import styled from '@emotion/styled'
 import 'github-markdown-css'
 
-import { Main } from '~/src/common/styles'
-
-const Info = styled.p`
-  margin-bottom: 2em;
-  text-align: right;
-`
-
-const Footer = styled.footer`
-  margin-top: 2em;
-  text-align: right;
-`
+import * as style from './post.module.css'
 
 type PostProps = {
   data: GatsbyTypes.PostPageQuery
@@ -24,21 +13,21 @@ export default function Post(props: PostProps) {
   const { date, title, authors } = markdownRemark?.frontmatter!
   const __html = markdownRemark?.html!
   return (
-    <Main>
+    <main className={style.main}>
       <Helmet>
         <title>{title}</title>
         <link rel="icon" href="/static/logo.svg" type="image/svg+xml" />
         <link rel="icon" href="/static/logo-512.png" type="image/png" />
       </Helmet>
       <h1>{title}</h1>
-      <Info>
+      <p className={style.info}>
         <time dateTime={date}>{date}</time>, by <b>{authors}</b>
-      </Info>
+      </p>
       <article className="markdown-body" dangerouslySetInnerHTML={{ __html }} />
-      <Footer>
+      <footer className={style.footer}>
         <Link to="/">목록으로 돌아가기</Link>
-      </Footer>
-    </Main>
+      </footer>
+    </main>
   )
 }
 

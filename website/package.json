@@ -13,7 +13,6 @@
     "@types/react-helmet": "^6.1.0",
     "gatsby": "^2.31.1",
     "gatsby-plugin-catch-links": "^2.9.0",
-    "gatsby-plugin-module-resolver": "^1.0.3",
     "gatsby-plugin-react-helmet": "^3.9.0",
     "gatsby-plugin-sitemap": "^2.11.0",
     "gatsby-plugin-typegen": "^2.2.4",

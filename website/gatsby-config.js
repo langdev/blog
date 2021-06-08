@@ -13,15 +13,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
     {
-      resolve: 'gatsby-plugin-module-resolver',
-      options: {
-        root: './',
-        aliases: {
-          '~': '.',
-        },
-      },
-    },
-    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'posts',

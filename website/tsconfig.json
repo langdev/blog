@@ -19,12 +19,6 @@
     "isolatedModules": true,
     "forceConsistentCasingInFileNames": true,
 
-    // Path alias
-    "baseUrl": "./",
-    "paths": {
-      "~/*": ["*"]
-    },
-
     // Advanced
     "skipLibCheck": true
   }

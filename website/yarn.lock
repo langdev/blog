@@ -3965,7 +3965,6 @@ __metadata:
     "@types/react-helmet": ^6.1.0
     gatsby: ^2.31.1
     gatsby-plugin-catch-links: ^2.9.0
-    gatsby-plugin-module-resolver: ^1.0.3
     gatsby-plugin-react-helmet: ^3.9.0
     gatsby-plugin-sitemap: ^2.11.0
     gatsby-plugin-typegen: ^2.2.4
@@ -7775,15 +7774,6 @@ fsevents@~2.3.1:
   peerDependencies:
     gatsby: ^2.0.0
   checksum: c82fe36643a31a8e008f490a94a10d473c13b91603a686bc7993101e54749cea068c0e21db32e3bab0c574987c5edac9ed0f71c47284735b14f91cf90009a2af
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-module-resolver@npm:^1.0.3":
-  version: 1.0.3
-  resolution: "gatsby-plugin-module-resolver@npm:1.0.3"
-  peerDependencies:
-    gatsby: ">=1"
-  checksum: 9e2b8ddf9e394b52a6417259f6d5b7e74181858307ceddf078ce8dd35b2ec07d236e8e42c3991846ea49e93e8aa9aeb6c64a0b5afba073700206736e2beed9a0
   languageName: node
   linkType: hard
 

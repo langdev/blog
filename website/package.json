@@ -11,7 +11,7 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-helmet": "^6.1.0",
-    "gatsby": "^2.31.1",
+    "gatsby": "^3.7.0",
     "gatsby-plugin-catch-links": "^3",
     "gatsby-plugin-react-helmet": "^4",
     "gatsby-plugin-sitemap": "^4",

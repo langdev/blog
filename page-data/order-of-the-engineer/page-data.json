@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-post-tsx",
+    "path": "/order-of-the-engineer",
+    "result": {"data":{"markdownRemark":{"html":"<p><a href=\"https://order-of-the-engineer.org/\">엔지니어 기사단</a>은 미국의 엔지니어 단체로, 1970년 창립되어 얼마 전에 50주년 행사를 가졌습니다. 이 단체에 가입하려면 <a href=\"https://order-of-the-engineer.org/about-the-order/obligation/\">엔지니어의 맹세</a>를 서약해야 합니다. 가입하면 스테인리스 스틸로 된 반지를 줍니다. 이 반지는 주로 쓰는 손(왼손잡이는 왼손, 오른손잡이는 오른손)의 새끼손가락에 끼고, 도면을 그릴 때마다 종이에 닿는 그 무게를 느끼는 것입니다.</p>\n<p>엔지니어 기사단의 맹세는 좋은 글입니다. 더 널리 알리고 싶어서, 시간을 내어 한국어로 직접 번역해 보았습니다.</p>\n<h2>엔지니어의 맹세</h2>\n<p>나는 엔지니어다. 나는 내 일에 큰 자부심을 느낀다. 거기에는 숭고한 의무가 따른다. 엔지니어로서 나는,</p>\n<p>진실하고 공정하고, 포용하고 존경하며, 내 일의 존엄과 기준을 지킬 것을 맹세하고, 언제나 기술에는 지구의 소중한 자원을 가장 잘 활용하여 인류에 봉사할 의무가 함께한다는 것을 상기한다.</p>\n<p>엔지니어로서 나는, 양심적인 사업에만 참여하겠다. 공익을 위해 필요하다면, 아낌없이 기술과 지식을 내어놓겠다. 업무를 행하고 직무에 충실함에 있어, 나는 최선을 다하겠다.</p>","frontmatter":{"date":"2022-10-16","title":"엔지니어 기사단의 맹세","authors":"sanxiyn"}}},"pageContext":{}},
+    "staticQueryHashes": []}

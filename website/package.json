@@ -18,7 +18,7 @@
     "gatsby-plugin-typegen": "^2.2.4",
     "gatsby-plugin-typescript": "^3",
     "gatsby-source-filesystem": "^3",
-    "gatsby-transformer-remark": "^4",
+    "gatsby-transformer-remark": "^5",
     "prettier": "^2.2.1",
     "typescript": "^4.1.3"
   },
